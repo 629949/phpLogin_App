@@ -38,7 +38,21 @@ unset($_SESSION['msg'], $_SESSION['msg_type']);
                             <label for="password">Password</label>
                             <input type="password" name="password" id="password" required>
                         </div>
+
+                        <div class="row">
+                            <label for="remember">
+                                <input type="checkbox" name="remember" id="remember"> Remember me
+                            </label>
+                        </div>
+
+                        
+
                         <button type="submit">Login</button>
+
+                        <a href="auth/register.php">
+                            <button class="secondary" type="button">Register</button>
+                        </a>
+
                     </form>
                 </div>
             </div>
