@@ -18,6 +18,8 @@ unset($_SESSION['msg'], $_SESSION['msg_type']);
 <body>
     <div class="container">
         <div class="left">
+    </div>
+
             <div class="right">
                 <div class="card">
                     <h2>Welcome to Earthlight holdings</h2>
@@ -32,31 +34,31 @@ unset($_SESSION['msg'], $_SESSION['msg_type']);
                     <form action="auth/login.php" method="post">
                         <div class="input-group">
                             <label for="username">Username</label>
-                            <input type="text" name="username" id="username" required>
+                            <input type="text" name="username" class="input">
                         </div>
                         <div class="input-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" required>
+                            <input type="password" name="password" class="input" required>
                         </div>
 
                         <div class="row">
                             <label for="remember">
-                                <input type="checkbox" name="remember" id="remember"> Remember me
+                                <input type="checkbox" name="remember" value="1"> Remember me
                             </label>
                         </div>
 
                         
 
-                        <button type="submit">Login</button>
+                        <button type="submit" class="btn btn-primary">Login</button>
 
                         <a href="auth/register.php">
-                            <button class="secondary" type="button">Register</button>
+                            <button class="btn-secondary" type="button">Register</button>
                         </a>
 
                     </form>
                 </div>
             </div>
-        </div>
+        
     </div>
     
 </body>
